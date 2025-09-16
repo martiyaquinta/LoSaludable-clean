@@ -1,0 +1,11 @@
+node_modules
+# dependencias
+node_modules/
+
+# build
+dist/
+build/
+
+# configs locales
+.DS_Store
+.env
