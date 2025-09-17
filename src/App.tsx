@@ -268,6 +268,33 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
               </div>
             </div>
           </div>
+
+          {/* Pan bagel*/}
+            <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+              <div className="h-64 bg-gradient-to-br from-[#81c784] to-[#a1887f] flex items-center justify-center">
+                <img 
+                  src= "panbagel.png" 
+                  alt="Pan sin gluten estilo Bagel"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-8">
+                <div className="flex items-center space-x-2 mb-4">
+                  <Award className="text-[#81c784]" size={24} />
+                  <h3 className="text-2xl font-light text-[#57745f]">Pan Bagel</h3>
+                </div>
+                <p className="text-[#57745f] font-light leading-relaxed mb-6">
+                  Pan estilos Bagels que cuidan tu cuerpo y conquistan tu paladar. Ideales para cualquier momento del día.
+
+                </p>
+                <ul className="space-y-2 text-[#81c784] font-light">
+                  <li>✓ Perfectos para sándwiches rápidos</li>
+                <li>✓ Se pueden freezar y disfrutar cuando quieras</li>
+                  <li>✓ Nutritivos y naturalmente libres de gluten</li>
+                  
+                </ul>
+              </div>
+            </div>
           
 
           <div className="text-center mt-12">
