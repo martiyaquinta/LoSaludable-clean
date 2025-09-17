@@ -241,7 +241,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 
 
-
+            <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto"></div>
             {/* Opciones saladas */}
             <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
               <div className="h-64 bg-gradient-to-br from-[#a1887f] to-[#81c784] flex items-center justify-center">
@@ -269,6 +269,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
             </div>
           </div>
 
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto"></div>
           {/* Pan bagel*/}
             <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
               <div className="h-64 bg-gradient-to-br from-[#81c784] to-[#a1887f] flex items-center justify-center">
