@@ -200,7 +200,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                   <h3 className="text-2xl font-light text-[#57745f]">Pepas Dulces</h3>
                 </div>
                 <p className="text-[#57745f] font-light leading-relaxed mb-6">
-                  Nuestras pepas dulces están endulzadas naturalmente con eritritol. Perfectas para acompañar tu té o café.
+                  Nuestras pepas están endulzadas naturalmente con eritritol. Perfectas para acompañar tu té o café.
                 </p>
                 <ul className="space-y-2 text-[#81c784] font-light">
                   <li>✓ Dulzura natural</li>
