@@ -3,12 +3,22 @@ import { Menu, X, MessageCircle, Heart, Leaf, Award } from 'lucide-react';
 
 function App() {
 const [isMenuOpen, setIsMenuOpen] = useState(false);
+ const [carouselIndex, setCarouselIndex] = useState(0);
+ const carouselImages = [
+   'carrusel1.png',
+   'carrusel2.png',
+   'carrusel3.png',
+   'carrusel4.png',
+ ];
+ const goToPrev = () => setCarouselIndex(carouselIndex === 0 ? carouselImages.length - 1 : carouselIndex - 1);
+ const goToNext = () => setCarouselIndex(carouselIndex === carouselImages.length - 1 ? 0 : carouselIndex + 1);
   
 
   const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
     setIsMenuOpen(false);
   };
+  
 
   return (
     <div className="min-h-screen bg-white">
@@ -353,7 +363,44 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
         </div>
       </section>
 
+
+
       {/* Footer */}
+      {/* Carrusel React al final */}
+      <div className="w-full max-w-2xl mx-auto my-12">
+        <div className="relative">
+            <img
+              src={carouselImages[carouselIndex]}
+              alt={`Carrusel ${carouselIndex + 1}`}
+              className="w-full h-[32rem] object-cover rounded-2xl shadow-lg"
+          />
+          <button
+            onClick={goToPrev}
+            className="absolute left-2 top-1/2 -translate-y-1/2 bg-[#57745f] text-white rounded-full p-2 shadow hover:bg-[#81c784]"
+            aria-label="Anterior"
+          >
+            &#8592;
+          </button>
+          <button
+            onClick={goToNext}
+            className="absolute right-2 top-1/2 -translate-y-1/2 bg-[#57745f] text-white rounded-full p-2 shadow hover:bg-[#81c784]"
+            aria-label="Siguiente"
+          >
+            &#8594;
+          </button>
+          <div className="flex justify-center mt-4 gap-2">
+            {carouselImages.map((_, idx) => (
+              <button
+                key={idx}
+                onClick={() => setCarouselIndex(idx)}
+                className={`w-3 h-3 rounded-full ${carouselIndex === idx ? 'bg-[#81c784]' : 'bg-gray-300'}`}
+                aria-label={`Ir a la imagen ${idx + 1}`}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+
       <footer className="bg-[#57745f] text-white py-8">
         <div className="container mx-auto px-6 text-center">
           <div className="flex items-center justify-center space-x-3 mb-4">
