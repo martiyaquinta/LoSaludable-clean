@@ -23,7 +23,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="fixed top-0 left-0 right-0 bg-white/20 backdrop-blur-sm shadow-sm z-20">
+      <header className="fixed top-0 left-0 right-0 bg-white backdrop-blur-sm shadow-sm z-20">
         <nav className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
@@ -32,32 +32,32 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                 alt="Lo Saludable Logo" 
                 className="h-24 w-24 object-contain"
               />
-              <span className="text-2xl font-light text-white tracking-wide">LoSaludable</span>
+              <span className="text-2xl font-light text-[rgb(129,199,132)] tracking-wide">LoSaludable</span>
             </div>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
               <button 
                 onClick={() => scrollToSection('inicio')}
-                className="text-white hover:text-[#81c784] transition-colors duration-300 font-light"
+                className="text-[#81c784] hover:text-[#08470b] transition-colors duration-300 font-light"
               >
                 Inicio
               </button>
               <button 
                 onClick={() => scrollToSection('sobre-mi')}
-                className="text-white hover:text-[#81c784] transition-colors duration-300 font-light"
+                className="text-[#81c784] hover:text-[#08470b] transition-colors duration-300 font-light"
               >
                 Sobre nosotros
               </button>
               <button 
                 onClick={() => scrollToSection('productos')}
-                className="text-white hover:text-[#81c784] transition-colors duration-300 font-light"
+                className="text-[#81c784] hover:text-[#08470b] transition-colors duration-300 font-light"
               >
                 Productos
               </button>
               <button 
                 onClick={() => scrollToSection('pedidos')}
-                className="text-white hover:text-[#81c784] transition-colors duration-300 font-light"
+                className="text-[#81c784] hover:text-[#08470b] transition-colors duration-300 font-light"
               >
               Pedidos
               </button>
