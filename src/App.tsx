@@ -9,6 +9,8 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
    'carrusel2.png',
    'carrusel3.png',
    'carrusel4.png',
+   'carrusel5.png.JPG',
+   'carrusel6.png',
  ];
  const goToPrev = () => setCarouselIndex(carouselIndex === 0 ? carouselImages.length - 1 : carouselIndex - 1);
  const goToNext = () => setCarouselIndex(carouselIndex === carouselImages.length - 1 ? 0 : carouselIndex + 1);
@@ -273,7 +275,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
             <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
               <div className="h-64 bg-gradient-to-br from-[#a1887f] to-[#81c784] flex items-center justify-center">
                 <img 
-                  src="pan.png" 
+                  src="panketo.png" 
                   alt="Pan de queso"
                   className="w-full h-full object-cover"
                 />
