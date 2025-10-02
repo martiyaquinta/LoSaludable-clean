@@ -295,6 +295,31 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                 </ul>
               </div>
             </div>
+
+            {/* crackers*/}
+            <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+              <div className="h-64 bg-gradient-to-br from-[#a1887f] to-[#81c784] flex items-center justify-center">
+                <img 
+                  src="crackers.png" 
+                  alt="Crackers de semillas"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-8">
+                <div className="flex items-center space-x-2 mb-4">
+                  <Leaf className="text-[#81c784]" size={24} />
+                  <h3 className="text-2xl font-light text-[#57745f]">Crackers de semillas</h3>
+                </div>
+                <p className="text-[#57745f] font-light leading-relaxed mb-6">
+                  Deliciosos crackers de semillas, perfectos para picar entre horas o acompañar tus comidas.
+                </p>
+                <ul className="space-y-2 text-[#81c784] font-light">
+                  <li>✓ Proteina natural</li>
+                  <li>✓ Sabor intenso</li>
+                  <li>✓ Energia nutritiva</li>
+                </ul>
+              </div>
+            </div>
           </div>
 
 
