@@ -326,17 +326,17 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
               <div className="h-64 bg-gradient-to-br from-[#ff9a8b] to-[#81c784] flex items-center justify-center">
                 <img 
                   src="boxmadre.jpg" 
-                  alt="Box dia de la madre"
+                  alt="Box degustacion"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="p-8">
                 <div className="flex items-center space-x-2 mb-4">
                   <Heart className="text-[#81c784]" size={24} />
-                  <h3 className="text-2xl font-light text-[#57745f]">Box dia de la madre</h3>
+                  <h3 className="text-2xl font-light text-[#57745f]">Box degustación</h3>
                 </div>
                 <p className="text-[#57745f] font-light leading-relaxed mb-6">
-                  Box especial para el día de la madre con una selección de nuestros productos más deliciosos.
+                  Box especial para compartir con una selección de nuestros productos más deliciosos.
                 </p>
                 <ul className="space-y-2 text-[#81c784] font-light">
                   <li>✓ Pan de queso </li>
