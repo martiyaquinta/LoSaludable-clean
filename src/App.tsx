@@ -387,7 +387,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                 Envíanos un mensaje directo por WhatsApp. Te responderemos rápidamente para coordinar tu pedido personalizado.
               </p>
               <a 
-                href="https://wa.me/5492266515776?text=Hola! Me interesa hacer un pedido de productos LoSaludable"
+                href="https://wa.me/5492494550855?text=Hola! Me interesa hacer un pedido de productos LoSaludable"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-[#25D366] text-white px-8 py-3 rounded-full hover:bg-[#128C7E] transition-all duration-300 font-light text-lg shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
