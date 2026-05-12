@@ -198,7 +198,8 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
 
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {/* Pepas dulces */}
-            <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+            <div className="relative bg-white rounded-2xl shadow-md transition-shadow duration-300 overflow-hidden opacity-60">
+              <div className="absolute top-4 right-4 z-10 bg-red-500 text-white text-sm font-semibold px-3 py-1 rounded-full shadow">Sin Stock</div>
               <div className="h-64 bg-gradient-to-br from-[#81c784] to-[#a1887f] flex items-center justify-center">
                 <img 
                   src= "pepas.png" 
@@ -223,7 +224,8 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
             </div>
 
             {/* Budín de Naranja */}
-            <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+            <div className="relative bg-white rounded-2xl shadow-md transition-shadow duration-300 overflow-hidden opacity-60">
+              <div className="absolute top-4 right-4 z-10 bg-red-500 text-white text-sm font-semibold px-3 py-1 rounded-full shadow">Sin Stock</div>
               <div className="h-64 bg-gradient-to-br from-[#ffe082] to-[#81c784] flex items-center justify-center">
                 <img 
                   src="budin.png" 
@@ -297,9 +299,10 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
             </div>
 
             {/* crackers*/}
-            <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+            <div className="relative bg-white rounded-2xl shadow-md transition-shadow duration-300 overflow-hidden opacity-60">
+              <div className="absolute top-4 right-4 z-10 bg-red-500 text-white text-sm font-semibold px-3 py-1 rounded-full shadow">Sin Stock</div>
               <div className="h-64 bg-gradient-to-br from-[#a1887f] to-[#81c784] flex items-center justify-center">
-                <img 
+                <img
                   src="crackers.png" 
                   alt="Crackers de semillas"
                   className="w-full h-full object-cover"
@@ -322,7 +325,8 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
             </div>
 
             {/* Box dia de la madre */}
-            <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+            <div className="relative bg-white rounded-2xl shadow-md transition-shadow duration-300 overflow-hidden opacity-60">
+              <div className="absolute top-4 right-4 z-10 bg-red-500 text-white text-sm font-semibold px-3 py-1 rounded-full shadow">Sin Stock</div>
               <div className="h-64 bg-gradient-to-br from-[#ff9a8b] to-[#81c784] flex items-center justify-center">
                 <img 
                   src="boxmadre.jpg" 
